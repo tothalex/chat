@@ -1,5 +1,6 @@
 
 
+
 class Kiszolgáló implements Runnable {
     
     CsevegőSzerver szerver;
