@@ -47,6 +47,8 @@ class Kiszolgáló implements Runnable {
                 do {
                     if("vege".equals(sor))
                         break;
+                    if("mennyi".equals(sor))
+                        szerver.mindenkihez("A szerverez " + szerver.getCsevego() + "ember cseveg");
                     szerver.mindenkihez( "("+ ID +"): " + sor);
                     
                 } while((sor = bejövőCsatorna.readLine()) != null);
